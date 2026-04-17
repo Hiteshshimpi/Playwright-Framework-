@@ -44,7 +44,7 @@ public class TestCase_VerifyCheckoutFlow extends BaseTest {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            softAssert.assertAll(); // This ensures assertion errors are reported even after catch
+            softAssert.assertAll(); // This ensures assertion errors are reported even after catch , softassert will not fail the testcases and stop execution
         }
     }
 
