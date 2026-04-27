@@ -19,7 +19,7 @@ public class BaseTest {
 
     @BeforeClass
     @Parameters({ "appURL", "browserType" })
-    public void setUp(String appURL, String browserType) {
+    public void setUp(String appURL, String browserType) { //Does the setup before executing the class
         play = new PlaywrightFactory();
         page = play.getPage(appURL, browserType);
         loginPage = new LoginPage(page);
